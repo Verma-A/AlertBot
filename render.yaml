@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: telegram-trade-alert-bot
+    env: python
+    buildCommand: ""
+    startCommand: "python trade_alert_bot.py"
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: 7536489310:AAG2zyfopQUUO5QgmSgbrsOOntgP4ZFvR8c
+      - key: TELEGRAM_CHAT_ID
+        value: 5886258585
