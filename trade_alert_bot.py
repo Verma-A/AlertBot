@@ -1,8 +1,11 @@
 import os
 import time
 import schedule
+import sys
 from nsepython import nse_eq
 from telegram import Bot
+
+print("Python version:", sys.version)
 
 # Telegram setup
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
